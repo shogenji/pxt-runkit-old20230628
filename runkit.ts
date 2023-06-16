@@ -22,6 +22,10 @@ namespace runkit {
     }
 
 
+    /**
+        Move forward for duration [msec]
+        @param duration time[msec] move forward
+    **/
     //% blockId=move_forward
     //% weight=100
     //% block="Move forward for $duration"
@@ -87,8 +91,7 @@ namespace runkit {
     //% block="Set speed ratio to $speed"
     //% block.loc.ja = "スピードを $speed ％に設定する"
     //% speed.min=0 speed.max=100 speed.defl=50
-    //% subcategory="Settings"
-    //% subcategory.loc.ja = "設定"
+    //% subcategory="設定"
     export function setSpeedRatio(speed: number): void {
         if (speed < 0) {
             speed = 0
@@ -103,7 +106,7 @@ namespace runkit {
     //% block="Set max speed to $speed"
     //% block.loc.ja = "最高スピードを $speed に設定する"
     //% speed.min=0 speed.max=1023 speed.defl=500
-    //% subcategory="Settings"
+    //% subcategory="設定"
     //% subcategory.loc.ja = "設定"
     export function setMaxSpeed(speed: number): void {
         if (speed < 0) {
