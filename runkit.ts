@@ -2,8 +2,9 @@
  * Extensions for Switch Education's "Run Your micro:bit Kit."
  */
 //% weight=100
-//% color=#ff77ff icon="\uf1b9"
+//% color=#ff7700 icon="\uf1b9"
 //% block="Run Kit"
+//% block.loc.ja="走らせようキット"
 namespace runkit {
 
     let speedMax = 512
@@ -24,6 +25,7 @@ namespace runkit {
     //% blockId=move_forward
     //% weight=100
     //% block="Move forward for $duration"
+    //% block.loc.ja = "すすむ（ミリ秒）$duration"
     //% duration.min=0 duration.max=1000000 duration.defl=1000
     //% duration.shadow="timePicker"
     export function moveForward(duration: number): void {
@@ -35,6 +37,7 @@ namespace runkit {
     //% blockId=move_backward
     //% weight=90
     //% block="Move backward for $duration"
+    //% block.loc.ja = "さがる（ミリ秒） $duration"
     //% duration.min=0 duration.max=1000000 duration.defl=1000
     //% duration.shadow="timePicker"
     export function moveBackward(duration: number): void {
@@ -43,20 +46,9 @@ namespace runkit {
         motorOff(Motors.Both)
     }
 
-    //% blockId=rotate_ccw
-    //% weight=70
-    //% block="Rotate counter-clockwise for $duration"
-    //% duration.min=0 duration.max=1000000 duration.defl=1000
-    //% duration.shadow="timePicker"
-    export function rotateCcw(duration: number): void {
-        motorOn(Motors.Left, Dir.Backward, speedRatio)
-        motorOn(Motors.Right, Dir.Forward, speedRatio)
-        basic.pause(duration)
-        motorOff(Motors.Both)
-    }
-
     //% blockId=rotate_cw
     //% weight=80
+    //% block.loc.ja = "右回転（ミリ秒） $duration"
     //% block="Rotate clockwise for $duration"
     //% duration.min=0 duration.max=1000000 duration.defl=1000
     //% duration.shadow="timePicker"
@@ -67,9 +59,23 @@ namespace runkit {
         motorOff(Motors.Both)
     }
 
+    //% blockId=rotate_ccw
+    //% weight=70
+    //% block="Rotate counter-clockwise for $duration"
+    //% block.loc.ja = "左回転（ミリ秒） $duration"
+    //% duration.min=0 duration.max=1000000 duration.defl=1000
+    //% duration.shadow="timePicker"
+    export function rotateCcw(duration: number): void {
+        motorOn(Motors.Left, Dir.Backward, speedRatio)
+        motorOn(Motors.Right, Dir.Forward, speedRatio)
+        basic.pause(duration)
+        motorOff(Motors.Both)
+    }
+
     //% blockId=stop
     //% weight=60
     //% block="Stop"
+    //% block.loc.ja = "止まる"
     export function stop(): void {
         motorOff(Motors.Both)
     }
@@ -79,8 +85,10 @@ namespace runkit {
     //% blockId=set_speed_ratio
     //% weight=50
     //% block="Set speed ratio to $speed"
+    //% block.loc.ja = "スピードを $speed ％に設定する"
     //% speed.min=0 speed.max=100 speed.defl=50
     //% subcategory="Settings"
+    //% subcategory.loc.ja = "設定"
     export function setSpeedRatio(speed: number): void {
         if (speed < 0) {
             speed = 0
@@ -93,8 +101,10 @@ namespace runkit {
     //% blockId=set_max_speed
     //% weight=40
     //% block="Set max speed to $speed"
+    //% block.loc.ja = "最高スピードを $speed に設定する"
     //% speed.min=0 speed.max=1023 speed.defl=500
     //% subcategory="Settings"
+    //% subcategory.loc.ja = "設定"
     export function setMaxSpeed(speed: number): void {
         if (speed < 0) {
             speedMax = 0
