@@ -1,5 +1,5 @@
 {
-    "name": "Run Your micro:bit Kit",
+    "name": "走らせようキット",
     "description": "",
     "dependencies": {
         "core": "*"
