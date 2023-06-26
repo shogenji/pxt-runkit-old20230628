@@ -7,7 +7,6 @@
     "files": [
         "README.md",
         "runkit.ts",
-        "_locales/ja/runkit-jsdoc-strings.json",
         "_locales/ja/pxt-runkit-strings.json"
     ],
     "testFiles": [
