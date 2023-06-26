@@ -29,6 +29,7 @@ namespace runkit {
     //% blockId=move_forward
     //% weight=100
     //% block="Move forward for $duration"
+    //% block.loc.ja="すすむ（ミリ秒） $duration"
     //% duration.min=0 duration.max=1000000 duration.defl=1000
     //% duration.shadow="timePicker"
     export function moveForward(duration: number): void {
@@ -40,7 +41,7 @@ namespace runkit {
     //% blockId=move_backward
     //% weight=90
     //% block="Move backward for $duration"
-    //% block.loc.ja = "さがる（ミリ秒） $duration"
+    //% block.loc.ja="さがる（ミリ秒） $duration"
     //% duration.min=0 duration.max=1000000 duration.defl=1000
     //% duration.shadow="timePicker"
     export function moveBackward(duration: number): void {
