@@ -12,8 +12,13 @@ namespace runkit {
     //% block="speed ratio"
     //% block.loc.ja="スピード"
     //% subcategory="設定"
-    export let speedMax = 512
     export let speedRatio = 50
+    //% blockId=speed_max
+    //% weight=40
+    //% block="max speed"
+    //% block.loc.ja="最高スピード"
+    //% subcategory="設定"
+    export let speedMax = 512
 
     enum Motors {
         Left = 0,
@@ -100,7 +105,7 @@ namespace runkit {
 
 
     //% blockId=set_speed_ratio
-    //% weight=50
+    //% weight=30
     //% block="Set speed ratio to $speed"
     //% block.loc.ja="スピードを $speed ％に設定する"
     //% speed.min=0 speed.max=100 speed.defl=50
@@ -115,7 +120,7 @@ namespace runkit {
     }
 
     //% blockId=set_max_speed
-    //% weight=40
+    //% weight=20
     //% block="Set max speed to $speed"
     //% block.loc.ja="最高スピードを $speed に設定する"
     //% speed.min=0 speed.max=1023 speed.defl=500
