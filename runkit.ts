@@ -7,18 +7,8 @@
 //% block.loc.ja="走らせようキット"
 namespace runkit {
 
-    //% blockId=speed_ratio
-    //% weight=50
-    //% block="speed ratio"
-    //% block.loc.ja="スピード"
-    //% subcategory="設定"
-    export let speedRatio = 50
-    //% blockId=speed_max
-    //% weight=40
-    //% block="max speed"
-    //% block.loc.ja="最高スピード"
-    //% subcategory="設定"
-    export let speedMax = 512
+    let speedRatio = 50
+    let speedMax = 512
 
     enum Motors {
         Left = 0,
