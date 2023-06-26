@@ -23,8 +23,8 @@ namespace runkit {
 
 
     /**
-        Move forward for duration [msec]
-        @param duration time[msec] move forward
+        Move forward for duration [msec].
+        @param duration time [msec] move forward
     **/
     //% blockId=move_forward
     //% weight=100
@@ -38,6 +38,10 @@ namespace runkit {
         motorOff(Motors.Both)
     }
 
+    /**
+        Move backward for duration [msec].
+        @param duration time [msec] move forward
+    **/
     //% blockId=move_backward
     //% weight=90
     //% block="Move backward for $duration"
@@ -50,6 +54,10 @@ namespace runkit {
         motorOff(Motors.Both)
     }
 
+    /**
+        Rotate clockwise for duration [msec].
+        @param duration time [msec] rotate clockwise
+    **/
     //% blockId=rotate_cw
     //% weight=80
     //% block.loc.ja="右回転（ミリ秒） $duration"
