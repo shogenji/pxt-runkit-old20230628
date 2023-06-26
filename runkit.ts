@@ -7,8 +7,8 @@
 //% block.loc.ja="走らせようキット"
 namespace runkit {
 
-    let speedMax = 512
-    let speedRatio = 50
+    export let speedMax = 512
+    export let speedRatio = 50
 
     enum Motors {
         Left = 0,
