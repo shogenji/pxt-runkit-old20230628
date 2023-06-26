@@ -4,6 +4,7 @@
 //% weight=100
 //% color=#ff7700 icon="\uf1b9"
 //% block="Run Kit"
+//% block.loc.ja="走らせようキット"
 namespace runkit {
 
     let speedMax = 512

@@ -1,0 +1,4 @@
+{
+    "runkit.move_forward": "赤外線リモコンからのコードを取得します。",
+    "runkit.move_backward": "ロボットの製品情報およびバージョンを取得します。"
+}
