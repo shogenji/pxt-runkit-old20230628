@@ -7,6 +7,11 @@
 //% block.loc.ja="走らせようキット"
 namespace runkit {
 
+    //% blockId=speed_ratio
+    //% weight=50
+    //% block="speed ratio"
+    //% block.loc.ja="スピード"
+    //% subcategory="設定"
     export let speedMax = 512
     export let speedRatio = 50
 
