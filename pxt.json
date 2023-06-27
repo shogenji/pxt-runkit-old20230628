@@ -1,5 +1,5 @@
 {
-    "name": "runkit",
+    "name": "RunKit",
     "description": "micro:bitを走らせようキット用のMakeCode拡張機能",
     "dependencies": {
         "core": "*"
