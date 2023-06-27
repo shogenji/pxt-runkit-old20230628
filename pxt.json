@@ -7,7 +7,6 @@
     "files": [
         "README.md",
         "runkit.ts",
-        "_locales/ja/runkit-strings.json",
         "_locales/ja/RunKit-strings.json"
     ],
     "testFiles": [
