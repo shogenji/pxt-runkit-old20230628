@@ -1,5 +1,5 @@
 {
-    "name": "走らせようキット",
+    "name": "runkit",
     "description": "micro:bitを走らせようキット用のMakeCode拡張機能",
     "dependencies": {
         "core": "*"
